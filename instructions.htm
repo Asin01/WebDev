@@ -20,33 +20,29 @@ Tested: Jan 23, 2020; Passed with no problems.
 
 	<div data-role="page" id="instructionsPage" data-title="Instructions Page">
 
-	<div data-role="header"><h1>Instructions</h1></div>
+	<div data-role="header">
+		<a href="index.htm" data-icon="home" data-transition="flip" data-direction="reverse">Home</a>
+		<h1>Planning Instructions</h1>
+		<a href="notifications.htm" data-icon="info">Notifications</a> 
+	</div>
 
 	<div role="main" class="ui-content">
-	<p>
-		<a href="index.htm" rel="external">Home</a> 
-	</p>
-	<p>
-		<a href="supplies.htm" rel="external">Moving Supplies</a> 
-	</p>
-	<p>
-		<a href="companies.htm" rel="external">Moving Company</a> 
-	</p>
-	<p>
-		<a href="repairs.htm" rel="external">Repairs Cleaning</a> 
-	</p>
-	<p>
-		<a href="notifications.htm" rel="external">Notifications</a> 
-	</p>
-	<p>
-		<a href="utilities.htm" rel="external">Utilities</a> 
-	</p>
-	<p>
-		<a href="schedule.htm" rel="external">Schedule</a> 
-	</p>
 	</div>
 	
 	<div data-role="footer">
+		<div data-role="navbar">
+			<ul>
+				<!-- #5 Page Link added, #7 Transition added -->
+				<li><a href="supplies.htm" data-transition="fade">Moving Supplies</a></li>
+				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
+				<li><a href="companies.htm" data-prefetch="true" data-transition="fade">Moving Company</a></li>
+				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
+				<li><a href="repairs.htm" data-prefetch="true" data-transition="fade">Repairs Cleaning</a></li>
+				<!-- #5 Page Link added, #7 Transition added -->
+				<li><a href="utilities.htm" data-transition="fade">Utilities</a></li>
+				<li><a href="schedule.htm" data-transition="fade">Schedule</a></li>
+			</ul>
+		</div>
 	<h4></h4>
 	</div>
 	
