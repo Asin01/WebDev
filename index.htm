@@ -21,7 +21,13 @@ Tested: Jan 31, 2020; Passed with no problems.
 <div data-role="page" id="homePage" data-title="Home Page">
 
 	<div data-role="header">
-		<h1>Home</h1></div>
+		<!-- #5 Page Link added, #7 Transition added -->
+		<a href="contact.htm" data-icon="phone" data-transition="slide">Contact</a>
+		<h1>Home</h1>
+		<!-- #5 Page Link added, #7 Transition added -->
+		<a href="about.htm" data-icon="info" data-transition="slide">About</a>
+	</div>
+
 
 	<div role="main" class="ui-content">
    <p>
@@ -34,14 +40,10 @@ Tested: Jan 31, 2020; Passed with no problems.
 	<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">
 		<div data-role="navbar">
 			<ul>
-				<!-- #5 Page Link added, #7 Transition added -->
-				<li><a href="about.htm" data-transition="slide">About</a></li>
 				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
 				<li><a href="instructions.htm" data-prefetch="true" data-transition="slide">Planning Instructions</a></li>
 				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
 				<li><a href="planner.htm" data-prefetch="true" data-transition="slide">Planner</a></li>
-				<!-- #5 Page Link added, #7 Transition added -->
-				<li><a href="contact.htm" data-transition="slide">Contact</a></li>
 			</ul>
 		</div>
 	<h4>Amir's Moving Planner &copy; 2020</h4>
