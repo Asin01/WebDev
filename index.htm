@@ -23,23 +23,6 @@ Tested: Jan 31, 2020; Passed with no problems.
 	<div data-role="header"><h1>Home</h1></div>
 
 	<div role="main" class="ui-content">
-	<p>
-	   Find out more 
-	   <!-- #5 Page Link added, #7 Transition added -->
-	   <a href="about.htm" rel="external" data-transition="flip">about</a> us.
-	</p>
-	<p>
-		 <!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
-		Click <a href="instructions.htm" rel="external" data-prefetch="true" data-transition="flip">here</a> for Planning Instructions.
-	</p>
-	<p>
-		<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
-		Here's your <a href="planner.htm" rel="external" data-prefetch="true" data-transition="flip">planner</a>.
-	</p>
-	<p>
-		<!-- #5 Page Link added, #7 Transition added -->
-		<a href="contact.htm" rel="external" data-transition="flip">contact us</a>
-   </p>
    <p>
 	   Visit us at 
 	   <!-- #9 URL link added -->
@@ -50,10 +33,14 @@ Tested: Jan 31, 2020; Passed with no problems.
 	<div data-role="footer">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="about.htm">About</a></li>
-				<li><a href="instructions.htm">Planning Instructions</a></li>
-				<li><a href="planner.htm">Planner</a></li>
-				<li><a href="contact.htm">Contact</a></li>
+				<!-- #5 Page Link added, #7 Transition added -->
+				<li><a href="about.htm" data-transition="flip">About</a></li>
+				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
+				<li><a href="instructions.htm" data-prefetch="true" data-transition="flip">Planning Instructions</a></li>
+				<!-- #5 Page Link added, #6 Pre-Fetching added, #7 Transition added -->
+				<li><a href="planner.htm" data-prefetch="true" data-transition="flip">Planner</a></li>
+				<!-- #5 Page Link added, #7 Transition added -->
+				<li><a href="contact.htm" data-transition="flip">Contact</a></li>
 			</ul>
 		</div>
 	<h4></h4>
