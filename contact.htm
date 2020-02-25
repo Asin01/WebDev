@@ -14,6 +14,11 @@ Tested: Feb 24, 2020; Passed with no problems.
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+	input[type=submit] {
+		background-color:dodgerblue;
+	}	
+</style>
 </head>
 
 <body>
@@ -25,7 +30,7 @@ Tested: Feb 24, 2020; Passed with no problems.
 		<h1>Contact</h1></div>
 
 	<div role="main" class="ui-content">
-		<form action="echo.html" method="post">
+		<form action="contact.htm" method="post">
 			<div class="ui-field-contain">
 				<label for="name">Name:</label>
 				<input type="text" name="name" id="name" value=""/>
@@ -34,6 +39,19 @@ Tested: Feb 24, 2020; Passed with no problems.
 				<label for="email">Email:</label>
 				<input type="text" name="email" id="email" value=""/>
 			</div>
+			<div>
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				<option value="usa">USA</option>
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				</select>
+			</div>
+			<div class="ui-field-contain">
+				<label for="rating">Rate Us:</label>
+				<input type="range" name="rating" id="rating" 
+				min="0" max="10" value="22" data-highlight="true">
+			</div>	
 			<div>
 				<label for="message">Message:</label>
 				<textarea name="message" id="message"></textarea>
