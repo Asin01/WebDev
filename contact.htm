@@ -7,7 +7,7 @@ Use: Contact page of the Moving Planner program
 Author: Amir Sinanovic
 School/Term: SIU Carbondale, Spring 2020
 Developed: Jan 23, 2020
-Tested: Feb 24, 2020; Passed with no problems.
+Tested: Mar 7, 2020; Passed with no problems.
 ******************************************************************************-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact</title>
@@ -47,6 +47,16 @@ Tested: Feb 24, 2020; Passed with no problems.
 				<input type="submit" name="submit" value="Send"/>
 			</div>
 		</form>
+		<!--#7 week 8, Popup Widget-->
+		<a href="#firstPopup" data-role="button" 
+		data-rel="popup" data-position-to="window">How To Send A Message</a>
+	</div>
+	<div data-role="popup" id="firstPopup" data-dismissible="false" class="ui-content">
+		<p>To send us a message, please put your name, email and message in the fields above. Also, don't forget ut
+			to let us know how you like our app by sliding the "Rate Us" bar from 0 (I don't like it all) to 10 (I love it).
+			When you're all done, press the "Send" button, we'd love to hear your thoughts.
+		</p>
+		<a href="" data-rel="back" data-theme="b" data-role="button">Close</a>
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">

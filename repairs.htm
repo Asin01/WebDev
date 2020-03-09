@@ -7,7 +7,7 @@ Use: Repairs page of the Moving Planner program
 Author: Amir Sinanovic
 School/Term: SIU Carbondale, Spring 2020
 Developed: Jan 23, 2020
-Tested: Feb 24, 2020; Passed with no problems.
+Tested: Mar 7, 2020; Passed with no problems.
 ******************************************************************************-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Repairs</title>
@@ -19,12 +19,51 @@ Tested: Feb 24, 2020; Passed with no problems.
 <body>
 
 	<div data-role="page" id="repairsPage" data-title="Repairs Page">
+		<!--#3 Week 8 Cleaning panel-->
+		<div data-role="panel" id="leftPanel" data-display="overlay">
+			<ul data-role="listview" data-inset="true">
+				<li>Dust ledges,ceiling fixtures</li>
+				<li>Clean the Windows</li>
+				<li>Clean the door knobs</li>
+				<li>Clean all light switches and outlets</li>
+				<li>Clean the walls and baseboards</li>
+				<li>Vacuum</li>
+				<li>Clean bedrooms</li>
+				<li>Clean bathrooms</li>
+				<li>Clean the garage</li>
+				</ul>
+	
+			<p>
+				<a data-role="button" data-rel="close">Close</a>
+			</p>
+	
+		</div>
 
 	<div data-role="header">
 		<a href="index.htm" rel="external" data-icon="home" data-transition="slide" data-direction="reverse">Home</a>
 		<h1>Repairs</h1></div>
 
 	<div role="main" class="ui-content">
+		<div role="main" class="ui-content">
+			<!-- #2 Week 5 Unordered List added -->
+		<ul data-role="listview" data-inset="true">
+			<li data-role="list-divider">Indoor</li>
+			<!-- #3 Week 8 -->
+			<li>Make sure all kitchen appliances are in good working condition</li>
+			<li>Kitchen and Bathroom cabinets should open and close properly and be free of mositure</li>
+			<li>Sinks, Faucets and Showerheads should run leak-free and drains should be clog-free</li>
+			<li>Patch walls and ceilings, erase scuff marks on walls</li>
+			<li>Floors should be clean, wood fill scratches in wood floor, clean carpet, replace chipped tile</li>
+			<li>Make sure HVAC and water heater work properly</li>
+			<li>Replace lightbulbs, and make sure smoke and carbon monoxide detectors work properly</li>
+			<li data-role="list-divider">Outdoor</li>
+			<li>Trees, shrubs, plants and other vegetation should be neat and not interfere with property</li>
+			<li>Decks and Patios should be structurally sound</li>
+			<li>Fencing should be neat with no broken or rotten boards</li>
+			</ul>
+			<a href="#leftPanel" data-role="button">Cleaning Suggestions</a>
+	
+		</div>
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">

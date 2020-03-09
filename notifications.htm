@@ -7,7 +7,7 @@ Use: Notifications page of the Moving Planner program
 Author: Amir Sinanovic
 School/Term: SIU Carbondale, Spring 2020
 Developed: Jan 23, 2020
-Tested: Feb 24, 2020; Passed with no problems.
+Tested: Mar 7, 2020; Passed with no problems.
 ******************************************************************************-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Notifications</title>
@@ -25,6 +25,35 @@ Tested: Feb 24, 2020; Passed with no problems.
 		<h1>Notifications</h1></div>
 
 	<div role="main" class="ui-content">
+		<div data-role="tabs">
+			<!--#4 week 8 Tabs Widget-->
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#tab1">Personal</a></li>
+				<li><a href="#tab2">Business</a></li>
+			</ul>
+			</div>
+			<div id="tab1">
+				<ul data-role="listview" data-inset="true">
+					<li>Family</li>
+					<li>The Post Office</li>
+					<li>The IRS</li>
+					<li>Credit card companies</li>
+					<li>Banks</li>
+					<li>Utility Companies</li>
+					<li>Home, Car, renters insurance</li>
+					<li>Health Insurance</li>
+					<li>Your doctor</li>
+					<li>Phone, cable, and internet company</li>
+					</ul>
+			</div>
+
+			<div id="tab2">
+					<ul data-role="listview" data-inset="true">
+						<li>Your Employer</li>
+						</ul>
+				</div>
+			</div>
 	</div>
 	
 	<div data-role="footer" data-position="fixed" data-id="footernav" data-theme="a">
