@@ -20,7 +20,7 @@ $(function(){
 
 		app.bindings = function(){
 			// set up binding for form
-			$('#btnAddNote').on('touchend', function(e){
+			$('#btnSubmit').on('touchend', function(e){
 				e.preventDefault();
 				// save the note
 				app.addNote(
