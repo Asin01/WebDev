@@ -20,7 +20,7 @@ $(function(){
 
 		app.bindings = function(){
 			// set up binding for form
-			$('#btnSubmit').on('touchend', function(e){
+			$('#btnAddNote').on('touchend', function(e){
 				e.preventDefault();
 				// save the note
 				app.addNote(
@@ -48,14 +48,14 @@ $(function(){
 				note = notes[title],
 				page = ['<div data-role="page">',
 							'<div data-role="header" data-add-back-btn="true">',
-								'<h1>Display Items</h1>',
+								'<h1>Notekeeper</h1>',
 								'<a id="btnDelete" href="" data-href="ID" data-role="button" class="ui-btn-right">Delete</a>',
 							'</div>',
 							'<div role="main" class="ui-content"><h3>TITLE</h3><p>NOTE</p></div>',
 						'</div>'].join('');
 			var newPage = $(page);
 			//append it to the page container
-			display.htm(function(index,old){
+			newPage.html(function(index,old){
 				return old
 						.replace(/ID/g,title)
 						.replace(/TITLE/g,title
