@@ -8,7 +8,7 @@ $(function(){
         note.content = $("#note").val();
         notesList.push(note);
     };
-    $("display.htm").on("pagebeforeshow", function(){
+    $("#display.htm").on("pagebeforeshow", function(){
         for (i=0; i<notesList.length; i++){
             $("#list_notes").append("<li id='" +  i + "'><a href='page_viewNote'>" + notesList[i].title + "</a></li>");
         }
